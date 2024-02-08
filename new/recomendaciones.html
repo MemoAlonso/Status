@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recomendaciones</title>
+	<link rel="stylesheet" type="text/css" href="css/styles_recomedaciones.css">
+</head>
+<body>
+	<header>
+		<h1>Sistema de Control de Procesos</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#parametrizacion">Parámetrización</a></li>
+			<li><a href="informes.html">Informes</a></li>
+			<li><a href="recomendaciones.html">Recomendaciones</a></li>
+			<li><a href="#acciones">Acciones</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="recomendaciones">
+			<h2>Recomendaciones</h2>
+			<form action="#" method="post">
+				<label for="numero_informe">Número de Informe:</label>
+				<input type="text" id="numero_informe" name="numero_informe">
+				<label for="numero_recomendacion">Número de Recomendación:</label>
+				<input type="text" id="numero_recomendacion" name="numero_recomendacion">
+				<label for="texto_recomendacion">Texto de la Recomendación:</label>
+				<textarea id="texto_recomendacion" name="texto_recomendacion"></textarea>
+				<label for="frecuencia_evaluacion">Frecuencia Evaluación:</label>
+				<select id="frecuencia_evaluacion" name="frecuencia_evaluacion">
+					<option value="mensual">Mensual</option>
+					<option value="trimestral">Trimestral</option>
+					<option value="semestral">Semestral</option>
+					<option value="cuatrimestral">Cuatrimestral</option>
+					<option value="anual">Anual</option>
+					<option value="una_vez">Una sola vez</option>
+				</select>
+				<label for="responsables">Responsables:</label>
+				<select id="responsables" name="responsables[]" multiple>
+					<!-- Opciones de responsables -->
+				</select>
+				<label for="acciones">Acciones:</label>
+				<textarea id="acciones" name="acciones"></textarea>
+				<label for="fecha_accion">Fecha Acción:</label>
+				<input type="date" id="fecha_accion" name="fecha_accion">
+				<label for="archivos">Archivos:</label>
+				<input type="file" id="archivos" name="archivos[]" multiple>
+				<input type="submit" value="Guardar">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
